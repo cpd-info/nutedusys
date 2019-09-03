@@ -14,3 +14,4 @@ SET timeok=%timeok:,=-%
 @echo on
 
 neo4j-admin dump --database=graph.db --to=/neo4j/data/backups/graph.db/%today%-%timeok%.dump
+
