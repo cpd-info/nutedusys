@@ -1,10 +1,4 @@
-<style>
-	canvas {
-		-moz-user-select: none;
-		-webkit-user-select: none;
-		-ms-user-select: none;
-	}
-</style>
+
 <meta charset="utf-8">
 <div id="wrapper">
 
@@ -84,33 +78,14 @@
 					<!-- Teste Chart -->
 					<div class="col-xl-4 col-lg-5">
 						<div class="card shadow mb-4">
-							<!-- Teste Header - Dropdown -->
+							<!-- Card Header - Dropdown -->
 							<div class="card-header py-3">
 								<h6 class="m-0 font-weight-bold text-primary">Teste</h6>
 							</div>
-							<!-- Teste Body -->
+							<!-- Card Body -->
 							<div class="card-body">
 								<canvas id="myChart"></canvas>
 
-								<hr>
-								Styling for the donut chart can be found in the
-								<code>/js/demo/chart-pie-demo.js</code>
-								file.
-							</div>
-						</div>
-					</div>
-					
-					<!-- Novo Chart -->
-					<div class="col-xl-4 col-lg-5">
-						<div class="card shadow mb-4">
-							<!-- Novo Header - Dropdown -->
-							<div class="card-header py-3">
-								<h6 class="m-0 font-weight-bold text-primary">Novo</h6>
-							</div>
-							<!-- Novo Body -->
-							<div class="card-body">
-								<canvas id="canvas"></canvas>
-								<button id="randomizeData">Randomize Data</button>
 								<hr>
 								Styling for the donut chart can be found in the
 								<code>/js/demo/chart-pie-demo.js</code>
@@ -128,113 +103,36 @@
 	</div>
 	<!-- End of Content Wrapper -->
 </div>
-<!--<script src="//www.google-analytics.com/analytics.js"></script> -->
 <!-- End of Page Wrapper -->
 <!-- Logout Modal-->
 <!-- Bootstrap core JavaScript-->
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!--<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- Core plugin JavaScript-->
-<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+<!--<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 <!-- Custom scripts for all pages-->
-<script src="js/sb-admin-2.min.js"></script>
+<!--<script src="js/sb-admin-2.min.js"></script>
 <!-- Page level plugins -->
-<script src="vendor/Chart.min.js"></script>
 <script src="vendor/chart.js/Chart.min.js"></script>
 <!-- Page level custom scripts -->
 <script src="js/demo/chart-area-demo.js"></script>
 <script src="js/demo/chart-pie-demo.js"></script>
 <script src="js/demo/chart-bar-demo.js"></script>
-	<script>
-		var chartData = {
-			labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-			datasets: [{
-				type: 'line',
-				label: 'Dataset 1',
-				borderColor: window.chartColors.blue,
-				borderWidth: 2,
-				fill: false,
-				data: [
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor()
-				]
-			}, {
-				type: 'bar',
-				label: 'Dataset 2',
-				backgroundColor: window.chartColors.red,
-				data: [
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor()
-				],
-				borderColor: 'white',
-				borderWidth: 2
-			}, {
-				type: 'bar',
-				label: 'Dataset 3',
-				backgroundColor: window.chartColors.green,
-				data: [
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor()
-				]
-			}]
 
-		};
-		window.onload = function() {
-			var ctx = document.getElementById('canvas').getContext('2d');
-			window.myMixedChart = new Chart(ctx, {
-				type: 'bar',
-				data: chartData,
-				options: {
-					responsive: true,
-					title: {
-						display: true,
-						text: 'Chart.js Combo Bar Line Chart'
-					},
-					tooltips: {
-						mode: 'index',
-						intersect: true
-					}
-				}
-			});
-		};
-		document.getElementById('randomizeData').addEventListener('click', function() {
-			chartData.datasets.forEach(function(dataset) {
-				dataset.data = dataset.data.map(function() {
-					return randomScalingFactor();
-				});
-			});
-			window.myMixedChart.update();
-		});
-	</script>
 <script>
 	var ctx = document.getElementById('myChart');
 	var myChart = new Chart(ctx, {
 		type : 'bar',
 		data : {
-			labels : [ 'Creche', 'Pré Escolar', ' Anos Iniciais', 'Anos Finais', 'E.J.A.', 'Outros' ],
+			labels : [ 'Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange' ],
 			datasets : [ {
-				label : 'Total de Turmas',
+				label : '# of Votes',
 				data : [ 12, 19, 3, 5, 2, 3 ],
 				backgroundColor : [ 'rgba(255, 99, 132, 0.2)',
-						'rgba(42, 133, 237, 0.2)', 'rgba(255, 206, 86, 0.2)',
+						'rgba(54, 162, 235, 0.2)', 'rgba(255, 206, 86, 0.2)',
 						'rgba(75, 192, 192, 0.2)', 'rgba(153, 102, 255, 0.2)',
 						'rgba(255, 159, 64, 0.2)' ],
 				borderColor : [ 'rgba(255, 99, 132, 1)',
-						'rgba(42, 133, 237, 1)', 'rgba(255, 206, 86, 1)',
+						'rgba(54, 162, 235, 1)', 'rgba(255, 206, 86, 1)',
 						'rgba(75, 192, 192, 1)', 'rgba(153, 102, 255, 1)',
 						'rgba(255, 159, 64, 1)' ],
 				borderWidth : 1
