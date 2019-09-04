@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import com.iala.cpd.entity.Organizacao;
 import com.iala.cpd.model.OrganizacaoModel;
-import com.iala.cpd.repository.EstadoRepository;
+//import com.iala.cpd.repository.EstadoRepository;
 import com.iala.cpd.repository.LocalidadeRepository;
 import com.iala.cpd.repository.OrganizacaoRepository;
 
@@ -19,8 +19,8 @@ public class MainController {
 	@Autowired
 	private OrganizacaoRepository organizacaoRepository;
 
-	@Autowired
-	private EstadoRepository estadoRepository;
+	//@Autowired
+	//private EstadoRepository estadoRepository;
 	
 	@Autowired
 	private LocalidadeRepository localidadeRepository;
@@ -32,12 +32,12 @@ public class MainController {
 
 	@GetMapping(value = "/home")
 	public String home(Model model) {
-		Organizacao org = organizacaoRepository.findAll(2).get(0);
-		OrganizacaoModel orgMod = new OrganizacaoModel(org);
-		Long ufId = org.getLocalidade().getEstado().getId();
-		model.addAttribute("Organizacao", orgMod);
-		model.addAttribute("Estados", estadoRepository.findAllByPais("Brasil"));
-		model.addAttribute("Municipios", localidadeRepository.findByUfId(ufId));
+		//Organizacao org = organizacaoRepository.findAll(2).get(0);
+		//OrganizacaoModel orgMod = new OrganizacaoModel(org);
+		//Long ufId = org.getLocalidade().getEstado().getId();
+		//model.addAttribute("Organizacao", orgMod);
+		//model.addAttribute("Estados", estadoRepository.findAllByPais("Brasil"));
+		//model.addAttribute("Municipios", localidadeRepository.findByUfId(ufId));
 		return "index";
 	}
 
@@ -51,15 +51,15 @@ public class MainController {
 		organizacaoRepository.save(org);
 	}
 
-	@GetMapping(value = "/administracao")
-	public String administracao() {
-		return "administracao";
-	}
+	//@GetMapping(value = "/administracao")
+	//public String administracao() {
+	//	return "administracao";
+	//}
 
-	@GetMapping(value = "/anoletivo")
-	public String anoLetivo() {
-		return "ano_letivo";
-	}
+	//@GetMapping(value = "/anoletivo")
+	//public String anoLetivo() {
+	//	return "ano_letivo";
+	//}
 
 	@GetMapping(value = "/acessoNegado")
 	public String acessoNegado() {

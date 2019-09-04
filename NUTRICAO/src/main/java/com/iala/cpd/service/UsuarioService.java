@@ -31,8 +31,8 @@ public class UsuarioService  implements UserDetailsService {
 	@Autowired
 	private GrupoRepository grupoRepository; 
 	
-	/*@Autowired
-	private FuncionarioRepository funcionarioRepository;*/
+	@Autowired
+	private FuncionarioRepository funcionarioRepository;
 			
 	/***
 	 * CONSULTA UM USUÁRIO POR LOGIN
