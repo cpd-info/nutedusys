@@ -1,1 +1,0 @@
-Cole estes BATCH na pasta \neo4j\bin
