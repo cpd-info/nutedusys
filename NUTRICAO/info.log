@@ -1,69 +1,212 @@
-2019-09-03 15:19:38.066  INFO 4504 --- [main] com.iala.cpd.ServiceApplicationTests     : Starting ServiceApplicationTests on DESKTOP-84NF5B0 with PID 4504 (started by Leandro in C:\Users\Leandro\git\repository\nutedusys\NUTRICAO)
-2019-09-03 15:19:38.072  INFO 4504 --- [main] com.iala.cpd.ServiceApplicationTests     : No active profile set, falling back to default profiles: default
-2019-09-03 15:19:40.995  INFO 4504 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-09-03 15:19:41.243  INFO 4504 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 224ms. Found 11 repository interfaces.
-2019-09-03 15:19:42.284  INFO 4504 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$540c226a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-09-03 15:19:42.305  INFO 4504 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bb5e5a30] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-09-03 15:19:42.433  INFO 4504 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-09-03 15:19:42.454  INFO 4504 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@b016b4e' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-09-03 15:19:42.484  INFO 4504 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$78e0c51c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-09-03 15:19:42.521  INFO 4504 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-09-03 15:19:45.965  INFO 4504 --- [main] org.neo4j.ogm.metadata.DomainInfo        : Starting Post-processing phase
-2019-09-03 15:19:45.967  INFO 4504 --- [main] org.neo4j.ogm.metadata.DomainInfo        : Building annotation class map
-2019-09-03 15:19:45.968  INFO 4504 --- [main] org.neo4j.ogm.metadata.DomainInfo        : Building interface class map for 67 classes
-2019-09-03 15:19:46.008  INFO 4504 --- [main] org.neo4j.ogm.metadata.DomainInfo        : Post-processing complete
-2019-09-03 15:19:46.476  WARN 4504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.apache.commons.logging.Log.fatalEnabled
-2019-09-03 15:19:46.500  WARN 4504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.apache.commons.logging.Log.errorEnabled
-2019-09-03 15:19:46.507  WARN 4504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.apache.commons.logging.Log.infoEnabled
-2019-09-03 15:19:46.514  WARN 4504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.apache.commons.logging.Log.debugEnabled
-2019-09-03 15:19:46.527  WARN 4504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.apache.commons.logging.Log.traceEnabled
-2019-09-03 15:19:46.532  WARN 4504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.apache.commons.logging.Log.warnEnabled
-2019-09-03 15:19:46.550  WARN 4504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.springframework.context.ApplicationContext.parent
-2019-09-03 15:19:46.556  WARN 4504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.springframework.context.ApplicationContext.environment
-2019-09-03 15:19:46.563  WARN 4504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.springframework.context.ApplicationContext.classLoader
-2019-09-03 15:19:46.570  WARN 4504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.springframework.context.ApplicationContext.displayName
-2019-09-03 15:19:46.577  WARN 4504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.springframework.context.ApplicationContext.startupDate
-2019-09-03 15:19:46.583  WARN 4504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.springframework.context.ApplicationContext.beanDefinitionCount
-2019-09-03 15:19:46.594  WARN 4504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.springframework.context.ApplicationContext.autowireCapableBeanFactory
-2019-09-03 15:19:46.597  WARN 4504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.springframework.context.ApplicationContext.beanDefinitionNames
-2019-09-03 15:19:46.598  WARN 4504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.springframework.context.ApplicationContext.parentBeanFactory
-2019-09-03 15:19:46.605  WARN 4504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.springframework.context.ApplicationContext.id
-2019-09-03 15:19:46.609  WARN 4504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.springframework.context.ApplicationContext.applicationName
-2019-09-03 15:19:46.613  INFO 4504 --- [main] o.s.d.neo4j.mapping.Neo4jMappingContext  : No class information found in OGM meta-data for class org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration so treating as simple type for SD Commons
-2019-09-03 15:19:46.626  INFO 4504 --- [main] o.s.d.neo4j.mapping.Neo4jMappingContext  : No class information found in OGM meta-data for class org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder so treating as simple type for SD Commons
-2019-09-03 15:19:46.634  INFO 4504 --- [main] o.s.d.neo4j.mapping.Neo4jMappingContext  : No class information found in OGM meta-data for class org.springframework.security.config.annotation.web.builders.HttpSecurity so treating as simple type for SD Commons
-2019-09-03 15:19:46.834  WARN 4504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.springframework.core.env.Environment.defaultProfiles
-2019-09-03 15:19:46.840  WARN 4504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.springframework.core.env.Environment.activeProfiles
-2019-09-03 15:19:46.856  WARN 4504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletContext.initParameterNames
-2019-09-03 15:19:46.862  WARN 4504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletContext.virtualServerName
-2019-09-03 15:19:46.868  WARN 4504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletContext.classLoader
-2019-09-03 15:19:46.873  WARN 4504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletContext.filterRegistrations
-2019-09-03 15:19:46.878  WARN 4504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletContext.servletNames
-2019-09-03 15:19:46.885  WARN 4504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletContext.sessionTrackingModes
-2019-09-03 15:19:46.892  WARN 4504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletContext.contextPath
-2019-09-03 15:19:46.898  WARN 4504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletContext.defaultSessionTrackingModes
-2019-09-03 15:19:46.903  WARN 4504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletContext.majorVersion
-2019-09-03 15:19:46.908  WARN 4504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletContext.effectiveMinorVersion
-2019-09-03 15:19:46.926  WARN 4504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletContext.sessionCookieConfig
-2019-09-03 15:19:46.936  WARN 4504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletContext.effectiveSessionTrackingModes
-2019-09-03 15:19:46.941  WARN 4504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletContext.attributeNames
-2019-09-03 15:19:46.947  WARN 4504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletContext.serverInfo
-2019-09-03 15:19:46.953  WARN 4504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletContext.servletRegistrations
-2019-09-03 15:19:46.958  WARN 4504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletContext.jspConfigDescriptor
-2019-09-03 15:19:46.964  WARN 4504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletContext.servlets
-2019-09-03 15:19:46.969  WARN 4504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletContext.requestCharacterEncoding
-2019-09-03 15:19:46.976  WARN 4504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletContext.responseCharacterEncoding
-2019-09-03 15:19:46.984  WARN 4504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletContext.sessionTimeout
-2019-09-03 15:19:46.989  WARN 4504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletContext.minorVersion
-2019-09-03 15:19:46.996  WARN 4504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletContext.servletContextName
-2019-09-03 15:19:47.001  WARN 4504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletContext.effectiveMajorVersion
-2019-09-03 15:19:47.009  WARN 4504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.FilterConfig.initParameterNames
-2019-09-03 15:19:47.014  WARN 4504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.FilterConfig.servletContext
-2019-09-03 15:19:47.046  WARN 4504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.FilterConfig.filterName
-2019-09-03 15:19:47.069  WARN 4504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.springframework.security.core.GrantedAuthority.authority
-2019-09-03 15:19:47.088  INFO 4504 --- [main] o.s.d.neo4j.mapping.Neo4jMappingContext  : Neo4jMappingContext initialisation completed
-2019-09-03 15:19:48.525  INFO 4504 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@36327cec, org.springframework.security.web.context.SecurityContextPersistenceFilter@370c1968, org.springframework.security.web.header.HeaderWriterFilter@dd71b20, org.springframework.security.web.csrf.CsrfFilter@37c41ec0, com.iala.cpd.configurationCrsfFilter@410ae5ac, org.springframework.security.web.authentication.logout.LogoutFilter@6deee370, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@414f13fc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3206174f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@43aeb5e0, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@4693a9ef, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1a8df0b3, org.springframework.security.web.session.SessionManagementFilter@7b6c6e70, org.springframework.security.web.access.ExceptionTranslationFilter@106d77da, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2e09c51]
-2019-09-03 15:19:49.587  INFO 4504 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-09-03 15:19:50.685  INFO 4504 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-09-03 15:19:52.183  INFO 4504 --- [main] com.iala.cpd.ServiceApplicationTests     : Started ServiceApplicationTests in 15.048 seconds (JVM running for 16.836)
-2019-09-03 15:19:53.295  INFO 4504 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-09 11:37:13.834  INFO 3716 --- [restartedMain] com.iala.cpd.Sigen                       : Starting Sigen on DESKTOP-84NF5B0 with PID 3716 (C:\Users\Leandro\git\repository\nutedusys\NUTRICAO\target\classes started by Leandro in C:\Users\Leandro\git\repository\nutedusys\NUTRICAO)
+2019-09-09 11:37:13.849  INFO 3716 --- [restartedMain] com.iala.cpd.Sigen                       : No active profile set, falling back to default profiles: default
+2019-09-09 11:37:14.517  INFO 3716 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-09 11:37:14.520  INFO 3716 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-09 11:37:16.750  INFO 3716 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-09 11:37:17.032  INFO 3716 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 263ms. Found 11 repository interfaces.
+2019-09-09 11:37:17.930  INFO 3716 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$706f5651] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-09 11:37:17.946  INFO 3716 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d7c18e17] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-09 11:37:17.990  INFO 3716 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-09 11:37:18.001  INFO 3716 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@1e28a1ae' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-09 11:37:18.005  INFO 3716 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$9543f903] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-09 11:37:18.015  INFO 3716 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-09 11:37:19.487  INFO 3716 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-09-09 11:37:19.644  INFO 3716 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-09 11:37:19.645  INFO 3716 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-09-09 11:37:19.675  INFO 3716 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_221\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_221/bin/server;C:/Program Files/Java/jre1.8.0_221/bin;C:/Program Files/Java/jre1.8.0_221/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\nodejs\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Users\Leandro\AppData\Roaming\npm;C:\Users\Leandro\Desktop;;.]
+2019-09-09 11:37:19.903  INFO 3716 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-09 11:37:19.905  INFO 3716 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5385 ms
+2019-09-09 11:37:21.154  INFO 3716 --- [restartedMain] org.neo4j.ogm.metadata.DomainInfo        : Starting Post-processing phase
+2019-09-09 11:37:21.155  INFO 3716 --- [restartedMain] org.neo4j.ogm.metadata.DomainInfo        : Building annotation class map
+2019-09-09 11:37:21.156  INFO 3716 --- [restartedMain] org.neo4j.ogm.metadata.DomainInfo        : Building interface class map for 66 classes
+2019-09-09 11:37:21.184  INFO 3716 --- [restartedMain] org.neo4j.ogm.metadata.DomainInfo        : Post-processing complete
+2019-09-09 11:37:21.726  WARN 3716 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.apache.commons.logging.Log.fatalEnabled
+2019-09-09 11:37:21.733  WARN 3716 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.apache.commons.logging.Log.errorEnabled
+2019-09-09 11:37:21.734  WARN 3716 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.apache.commons.logging.Log.infoEnabled
+2019-09-09 11:37:21.735  WARN 3716 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.apache.commons.logging.Log.debugEnabled
+2019-09-09 11:37:21.735  WARN 3716 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.apache.commons.logging.Log.traceEnabled
+2019-09-09 11:37:21.736  WARN 3716 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.apache.commons.logging.Log.warnEnabled
+2019-09-09 11:37:21.749  WARN 3716 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.springframework.context.ApplicationContext.parent
+2019-09-09 11:37:21.751  WARN 3716 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.springframework.context.ApplicationContext.environment
+2019-09-09 11:37:21.752  WARN 3716 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.springframework.context.ApplicationContext.classLoader
+2019-09-09 11:37:21.755  WARN 3716 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.springframework.context.ApplicationContext.displayName
+2019-09-09 11:37:21.756  WARN 3716 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.springframework.context.ApplicationContext.startupDate
+2019-09-09 11:37:21.757  WARN 3716 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.springframework.context.ApplicationContext.beanDefinitionCount
+2019-09-09 11:37:21.761  WARN 3716 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.springframework.context.ApplicationContext.autowireCapableBeanFactory
+2019-09-09 11:37:21.762  WARN 3716 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.springframework.context.ApplicationContext.beanDefinitionNames
+2019-09-09 11:37:21.763  WARN 3716 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.springframework.context.ApplicationContext.parentBeanFactory
+2019-09-09 11:37:21.764  WARN 3716 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.springframework.context.ApplicationContext.id
+2019-09-09 11:37:21.766  WARN 3716 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.springframework.context.ApplicationContext.applicationName
+2019-09-09 11:37:21.769  INFO 3716 --- [restartedMain] o.s.d.neo4j.mapping.Neo4jMappingContext  : No class information found in OGM meta-data for class org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration so treating as simple type for SD Commons
+2019-09-09 11:37:21.770  INFO 3716 --- [restartedMain] o.s.d.neo4j.mapping.Neo4jMappingContext  : No class information found in OGM meta-data for class org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder so treating as simple type for SD Commons
+2019-09-09 11:37:21.780  INFO 3716 --- [restartedMain] o.s.d.neo4j.mapping.Neo4jMappingContext  : No class information found in OGM meta-data for class org.springframework.security.config.annotation.web.builders.HttpSecurity so treating as simple type for SD Commons
+2019-09-09 11:37:22.013  WARN 3716 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.springframework.core.env.Environment.defaultProfiles
+2019-09-09 11:37:22.014  WARN 3716 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.springframework.core.env.Environment.activeProfiles
+2019-09-09 11:37:22.021  WARN 3716 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletContext.initParameterNames
+2019-09-09 11:37:22.022  WARN 3716 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletContext.virtualServerName
+2019-09-09 11:37:22.022  WARN 3716 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletContext.classLoader
+2019-09-09 11:37:22.023  WARN 3716 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletContext.filterRegistrations
+2019-09-09 11:37:22.025  WARN 3716 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletContext.servletNames
+2019-09-09 11:37:22.028  WARN 3716 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletContext.sessionTrackingModes
+2019-09-09 11:37:22.028  WARN 3716 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletContext.contextPath
+2019-09-09 11:37:22.029  WARN 3716 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletContext.defaultSessionTrackingModes
+2019-09-09 11:37:22.029  WARN 3716 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletContext.majorVersion
+2019-09-09 11:37:22.030  WARN 3716 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletContext.effectiveMinorVersion
+2019-09-09 11:37:22.054  WARN 3716 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletContext.sessionCookieConfig
+2019-09-09 11:37:22.060  WARN 3716 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletContext.effectiveSessionTrackingModes
+2019-09-09 11:37:22.060  WARN 3716 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletContext.attributeNames
+2019-09-09 11:37:22.060  WARN 3716 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletContext.serverInfo
+2019-09-09 11:37:22.102  WARN 3716 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletContext.servletRegistrations
+2019-09-09 11:37:22.103  WARN 3716 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletContext.jspConfigDescriptor
+2019-09-09 11:37:22.105  WARN 3716 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletContext.servlets
+2019-09-09 11:37:22.106  WARN 3716 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletContext.requestCharacterEncoding
+2019-09-09 11:37:22.107  WARN 3716 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletContext.responseCharacterEncoding
+2019-09-09 11:37:22.107  WARN 3716 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletContext.sessionTimeout
+2019-09-09 11:37:22.109  WARN 3716 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletContext.minorVersion
+2019-09-09 11:37:22.110  WARN 3716 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletContext.servletContextName
+2019-09-09 11:37:22.110  WARN 3716 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletContext.effectiveMajorVersion
+2019-09-09 11:37:22.113  WARN 3716 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.FilterConfig.initParameterNames
+2019-09-09 11:37:22.121  WARN 3716 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.FilterConfig.servletContext
+2019-09-09 11:37:22.121  WARN 3716 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.FilterConfig.filterName
+2019-09-09 11:37:22.138  WARN 3716 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.springframework.security.core.GrantedAuthority.authority
+2019-09-09 11:37:22.154  INFO 3716 --- [restartedMain] o.s.d.neo4j.mapping.Neo4jMappingContext  : Neo4jMappingContext initialisation completed
+2019-09-09 11:37:22.980  INFO 3716 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2ac6d9f4, org.springframework.security.web.context.SecurityContextPersistenceFilter@662da0f5, org.springframework.security.web.header.HeaderWriterFilter@5f8c6363, org.springframework.security.web.csrf.CsrfFilter@7f98be4f, com.iala.cpd.configurationCrsfFilter@2f076fa2, org.springframework.security.web.authentication.logout.LogoutFilter@6307b3d6, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@31fccaa7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3a93b7dc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@493802fa, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@7bf7fd52, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6b5e0a7d, org.springframework.security.web.session.SessionManagementFilter@e47d23b, org.springframework.security.web.access.ExceptionTranslationFilter@4d4217f9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6560155e]
+2019-09-09 11:37:23.395  INFO 3716 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-09 11:37:24.848  INFO 3716 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-09-09 11:37:26.274  INFO 3716 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-09-09 11:37:26.423 ERROR 3716 --- [restartedMain] org.apache.catalina.util.LifecycleBase   : Failed to start component [Connector[HTTP/1.1-8080]]
+
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1008) ~[tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:226) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:259) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:197) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:311) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:164) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552) [spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at com.iala.cpd.Sigen.main(Sigen.java:10) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_221]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_221]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_221]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_221]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_221]
+	at sun.nio.ch.Net.bind(Unknown Source) ~[na:1.8.0_221]
+	at sun.nio.ch.Net.bind(Unknown Source) ~[na:1.8.0_221]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source) ~[na:1.8.0_221]
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source) ~[na:1.8.0_221]
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:236) ~[tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210) ~[tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1085) ~[tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1171) ~[tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:568) ~[tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1005) ~[tomcat-embed-core-9.0.16.jar:9.0.16]
+	... 19 common frames omitted
+
+2019-09-09 11:37:26.585  INFO 3716 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-09-09 11:37:26.704  INFO 3716 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-09-09 11:37:26.717 ERROR 3716 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+2019-09-09 11:37:26.726  INFO 3716 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-09 11:49:05.294  INFO 6520 --- [restartedMain] com.iala.cpd.Sigen                       : Starting Sigen on DESKTOP-84NF5B0 with PID 6520 (C:\Users\Leandro\git\repository\nutedusys\NUTRICAO\target\classes started by Leandro in C:\Users\Leandro\git\repository\nutedusys\NUTRICAO)
+2019-09-09 11:49:05.299  INFO 6520 --- [restartedMain] com.iala.cpd.Sigen                       : No active profile set, falling back to default profiles: default
+2019-09-09 11:49:05.879  INFO 6520 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-09 11:49:05.978  INFO 6520 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-09 11:49:07.593  INFO 6520 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-09 11:49:07.814  INFO 6520 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 208ms. Found 11 repository interfaces.
+2019-09-09 11:49:08.662  INFO 6520 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$271ad6e6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-09 11:49:08.714  INFO 6520 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8e6d0eac] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-09 11:49:08.759  INFO 6520 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-09 11:49:08.765  INFO 6520 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@340193d4' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-09 11:49:08.780  INFO 6520 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$4bef7998] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-09 11:49:08.786  INFO 6520 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-09 11:49:09.872  INFO 6520 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-09-09 11:49:09.960  INFO 6520 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-09 11:49:09.961  INFO 6520 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-09-09 11:49:09.993  INFO 6520 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_221\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_221/bin/server;C:/Program Files/Java/jre1.8.0_221/bin;C:/Program Files/Java/jre1.8.0_221/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\nodejs\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Users\Leandro\AppData\Roaming\npm;C:\Users\Leandro\Desktop;;.]
+2019-09-09 11:49:10.178  INFO 6520 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-09 11:49:10.179  INFO 6520 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4192 ms
+2019-09-09 11:49:11.242  INFO 6520 --- [restartedMain] org.neo4j.ogm.metadata.DomainInfo        : Starting Post-processing phase
+2019-09-09 11:49:11.244  INFO 6520 --- [restartedMain] org.neo4j.ogm.metadata.DomainInfo        : Building annotation class map
+2019-09-09 11:49:11.245  INFO 6520 --- [restartedMain] org.neo4j.ogm.metadata.DomainInfo        : Building interface class map for 66 classes
+2019-09-09 11:49:11.270  INFO 6520 --- [restartedMain] org.neo4j.ogm.metadata.DomainInfo        : Post-processing complete
+2019-09-09 11:49:11.674  WARN 6520 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.apache.commons.logging.Log.fatalEnabled
+2019-09-09 11:49:11.680  WARN 6520 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.apache.commons.logging.Log.errorEnabled
+2019-09-09 11:49:11.681  WARN 6520 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.apache.commons.logging.Log.infoEnabled
+2019-09-09 11:49:11.682  WARN 6520 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.apache.commons.logging.Log.debugEnabled
+2019-09-09 11:49:11.682  WARN 6520 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.apache.commons.logging.Log.traceEnabled
+2019-09-09 11:49:11.682  WARN 6520 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.apache.commons.logging.Log.warnEnabled
+2019-09-09 11:49:11.694  WARN 6520 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.springframework.context.ApplicationContext.parent
+2019-09-09 11:49:11.696  WARN 6520 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.springframework.context.ApplicationContext.environment
+2019-09-09 11:49:11.697  WARN 6520 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.springframework.context.ApplicationContext.classLoader
+2019-09-09 11:49:11.698  WARN 6520 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.springframework.context.ApplicationContext.displayName
+2019-09-09 11:49:11.703  WARN 6520 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.springframework.context.ApplicationContext.startupDate
+2019-09-09 11:49:11.704  WARN 6520 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.springframework.context.ApplicationContext.beanDefinitionCount
+2019-09-09 11:49:11.709  WARN 6520 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.springframework.context.ApplicationContext.autowireCapableBeanFactory
+2019-09-09 11:49:11.710  WARN 6520 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.springframework.context.ApplicationContext.beanDefinitionNames
+2019-09-09 11:49:11.711  WARN 6520 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.springframework.context.ApplicationContext.parentBeanFactory
+2019-09-09 11:49:11.713  WARN 6520 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.springframework.context.ApplicationContext.id
+2019-09-09 11:49:11.715  WARN 6520 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.springframework.context.ApplicationContext.applicationName
+2019-09-09 11:49:11.718  INFO 6520 --- [restartedMain] o.s.d.neo4j.mapping.Neo4jMappingContext  : No class information found in OGM meta-data for class org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration so treating as simple type for SD Commons
+2019-09-09 11:49:11.719  INFO 6520 --- [restartedMain] o.s.d.neo4j.mapping.Neo4jMappingContext  : No class information found in OGM meta-data for class org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder so treating as simple type for SD Commons
+2019-09-09 11:49:11.723  INFO 6520 --- [restartedMain] o.s.d.neo4j.mapping.Neo4jMappingContext  : No class information found in OGM meta-data for class org.springframework.security.config.annotation.web.builders.HttpSecurity so treating as simple type for SD Commons
+2019-09-09 11:49:11.941  WARN 6520 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.springframework.core.env.Environment.defaultProfiles
+2019-09-09 11:49:11.942  WARN 6520 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.springframework.core.env.Environment.activeProfiles
+2019-09-09 11:49:11.957  WARN 6520 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletContext.initParameterNames
+2019-09-09 11:49:11.963  WARN 6520 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletContext.virtualServerName
+2019-09-09 11:49:11.964  WARN 6520 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletContext.classLoader
+2019-09-09 11:49:11.964  WARN 6520 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletContext.filterRegistrations
+2019-09-09 11:49:11.967  WARN 6520 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletContext.servletNames
+2019-09-09 11:49:11.969  WARN 6520 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletContext.sessionTrackingModes
+2019-09-09 11:49:11.969  WARN 6520 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletContext.contextPath
+2019-09-09 11:49:11.970  WARN 6520 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletContext.defaultSessionTrackingModes
+2019-09-09 11:49:11.970  WARN 6520 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletContext.majorVersion
+2019-09-09 11:49:11.971  WARN 6520 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletContext.effectiveMinorVersion
+2019-09-09 11:49:11.972  WARN 6520 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletContext.sessionCookieConfig
+2019-09-09 11:49:11.976  WARN 6520 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletContext.effectiveSessionTrackingModes
+2019-09-09 11:49:11.977  WARN 6520 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletContext.attributeNames
+2019-09-09 11:49:11.977  WARN 6520 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletContext.serverInfo
+2019-09-09 11:49:11.978  WARN 6520 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletContext.servletRegistrations
+2019-09-09 11:49:11.979  WARN 6520 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletContext.jspConfigDescriptor
+2019-09-09 11:49:11.980  WARN 6520 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletContext.servlets
+2019-09-09 11:49:11.981  WARN 6520 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletContext.requestCharacterEncoding
+2019-09-09 11:49:11.981  WARN 6520 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletContext.responseCharacterEncoding
+2019-09-09 11:49:11.982  WARN 6520 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletContext.sessionTimeout
+2019-09-09 11:49:11.985  WARN 6520 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletContext.minorVersion
+2019-09-09 11:49:11.986  WARN 6520 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletContext.servletContextName
+2019-09-09 11:49:11.988  WARN 6520 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletContext.effectiveMajorVersion
+2019-09-09 11:49:11.992  WARN 6520 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.FilterConfig.initParameterNames
+2019-09-09 11:49:11.992  WARN 6520 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.FilterConfig.servletContext
+2019-09-09 11:49:11.992  WARN 6520 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.FilterConfig.filterName
+2019-09-09 11:49:12.009  WARN 6520 --- [restartedMain] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.springframework.security.core.GrantedAuthority.authority
+2019-09-09 11:49:12.040  INFO 6520 --- [restartedMain] o.s.d.neo4j.mapping.Neo4jMappingContext  : Neo4jMappingContext initialisation completed
+2019-09-09 11:49:12.686  INFO 6520 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@427dd9e6, org.springframework.security.web.context.SecurityContextPersistenceFilter@841f24a, org.springframework.security.web.header.HeaderWriterFilter@4b6e1ad, org.springframework.security.web.csrf.CsrfFilter@79ce8a2c, com.iala.cpd.configurationCrsfFilter@714bf4bb, org.springframework.security.web.authentication.logout.LogoutFilter@20a97e6b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7b4dc054, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@138107bf, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7afefc76, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@bf57492, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@513a4fe4, org.springframework.security.web.session.SessionManagementFilter@89236af, org.springframework.security.web.access.ExceptionTranslationFilter@6ab13fac, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@34d650f1]
+2019-09-09 11:49:13.071  INFO 6520 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-09 11:49:15.143  INFO 6520 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-09-09 11:49:15.225  INFO 6520 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-09-09 11:49:15.236  INFO 6520 --- [restartedMain] com.iala.cpd.Sigen                       : Started Sigen in 10.939 seconds (JVM running for 11.709)
+2019-09-09 11:49:19.731  INFO 6520 --- [http-nio-8080-exec-10] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-09 11:49:19.769  INFO 6520 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-09 11:49:19.791  INFO 6520 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed initialization in 20 ms
