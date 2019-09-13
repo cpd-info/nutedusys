@@ -20,9 +20,11 @@ public class CardapioEscolar {
 	@Relationship("REFERENTE_A")
 	private Integer anoLetivo;
 	
+        //Limitação de lista precisa de testes
 	@Relationship("USA_NO_CARDAPIO1")
 	private List<CardapioSemanal> cardapio1 = Arrays.asList(new CardapioSemanal[4]);
 	
+        //Limitação de lista precisa de testes
 	@Relationship("USA_NO_CARDAPIO2")
 	private List<CardapioSemanal> cardapio2 = Arrays.asList(new CardapioSemanal[4]);
 	
