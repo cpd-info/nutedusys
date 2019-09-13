@@ -1,8 +1,12 @@
 package com.iala.cpd.entity;
 
+import java.util.List;
+
 import org.neo4j.ogm.annotation.GeneratedValue;
 import org.neo4j.ogm.annotation.Id;
 import org.neo4j.ogm.annotation.NodeEntity;
+import org.neo4j.ogm.annotation.Relationship;
+
 import com.iala.cpd.type.FaixaEtaria;
 import lombok.*;
 
@@ -13,4 +17,7 @@ public class Segmento {
 	private String nome;
 	private String nivel;
 	private FaixaEtaria faixaEtaria;
+	
+	@Relationship("CONTEMPLA")
+	private List<QuantitativoSegmento> escolasPorSegmento;
 }
