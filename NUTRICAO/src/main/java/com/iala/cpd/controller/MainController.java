@@ -1,29 +1,15 @@
 package com.iala.cpd.controller;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-import com.iala.cpd.entity.Organizacao;
-import com.iala.cpd.model.OrganizacaoModel;
-//import com.iala.cpd.repository.EstadoRepository;
-import com.iala.cpd.repository.LocalidadeRepository;
-import com.iala.cpd.repository.OrganizacaoRepository;
+//import com.iala.cpd.repository.EstadoRepository;;
 
 @Controller
 public class MainController {
 
-	@Autowired
-	private OrganizacaoRepository organizacaoRepository;
-
 	//@Autowired
 	//private EstadoRepository estadoRepository;
-	
-	@Autowired
-	private LocalidadeRepository localidadeRepository;
 
 	@GetMapping(value = "/")
 	public String login() {
@@ -41,15 +27,6 @@ public class MainController {
 		return "index";
 	}
 
-	@PostMapping(value = "/organizacao")
-	@ResponseBody
-	public void salvarOrganizacao(@ModelAttribute("Organizacao") OrganizacaoModel orgMod) {
-		Organizacao org = organizacaoRepository.findAll(2).get(0);
-		
-		org.setOrganizacao(orgMod);
-		org.setLocalidade(localidadeRepository.findById(orgMod.getLocalidadeId()).get());
-		organizacaoRepository.save(org);
-	}
 
 	//@GetMapping(value = "/administracao")
 	//public String administracao() {
