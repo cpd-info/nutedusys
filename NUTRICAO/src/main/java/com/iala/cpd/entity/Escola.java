@@ -5,13 +5,14 @@ import org.neo4j.ogm.annotation.GeneratedValue;
 import org.neo4j.ogm.annotation.Id;
 import org.neo4j.ogm.annotation.NodeEntity;
 import org.neo4j.ogm.annotation.Relationship;
+
 import com.iala.cpd.model.EscolaModel;
 import lombok.*;
 
 @NodeEntity
 @Data
 @EqualsAndHashCode(callSuper = false)
-public class Setor extends PessoaJuridica {
+public class Escola extends PessoaJuridica {
 	@Id
 	@GeneratedValue
 	Long id;
@@ -21,10 +22,12 @@ public class Setor extends PessoaJuridica {
 	private String celular;
 	private Long inep;
 
-	@EqualsAndHashCode.Exclude
-	@Relationship(type = "MATRIZ", direction = Relationship.INCOMING)
-	private Organizacao organizacao;
-
+	@Relationship("CARDAPIO_ELEITO")
+	private CardapioEscolar escola;
+	
+	@Relationship("CONTEMPLA")
+	private List<Segmento> segmentos;
+	
 	private List<String> telefones;
 
 	public void setEscola(EscolaModel esc) {

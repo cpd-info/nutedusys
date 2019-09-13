@@ -5,20 +5,17 @@ import org.neo4j.ogm.annotation.GeneratedValue;
 import org.neo4j.ogm.annotation.Id;
 import org.neo4j.ogm.annotation.RelationshipEntity;
 import org.neo4j.ogm.annotation.StartNode;
-import com.iala.cpd.type.DiaSemana;
-import com.iala.cpd.type.TipoRefeicao;
 import lombok.Data;
 
-@RelationshipEntity("MONTA")
+@RelationshipEntity("COMPOSTO_POR")
 @Data
-public class Composicao {
+public class AlimentoDiario {
 	@Id @GeneratedValue Long id;
-	private DiaSemana diaSemana;
-	private TipoRefeicao tipoRefeicao;
+	private Long quantidade;
 	
 	@StartNode
-	private MenuDiario menuDiario;
+	private GeneroAlimento generoAlimento;
 	
 	@EndNode
-	private CardapioSemanal cardapioSemanal;
+	private MenuDiario menuDiario;
 }

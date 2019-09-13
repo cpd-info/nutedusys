@@ -3,7 +3,7 @@ package com.iala.cpd.model;
 import java.time.LocalDate;
 import java.util.List;
 
-import com.iala.cpd.entity.Setor;
+import com.iala.cpd.entity.Escola;
 
 import lombok.Data;
 
@@ -32,13 +32,12 @@ public class EscolaModel {
 		System.out.println("(EscolaModel) Passei " + LocalDate.now());
 	}
  
-	public EscolaModel(Setor esc) {
+	public EscolaModel(Escola esc) {
 		super();
 		this.id = esc.getId();
 		this.nome = esc.getNome();
 		this.localidadeId = esc.getLocalidade().getId();
 		this.ufId = esc.getLocalidade().getEstado().getId();
-		this.organizacaoId = esc.getOrganizacao().getId();
 		this.celular = esc.getCelular();
 		this.inep = esc.getInep();
 		this.cnpj = esc.getNumero_cnpj();
