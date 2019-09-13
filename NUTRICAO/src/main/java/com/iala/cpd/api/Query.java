@@ -3,19 +3,14 @@ package com.iala.cpd.api;
 import java.util.Arrays;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Pageable;
-import org.springframework.data.domain.Sort;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
-import com.iala.cpd.entity.AnoLetivo;
 import com.iala.cpd.entity.Config;
 import com.iala.cpd.entity.Estado;
 import com.iala.cpd.entity.Grupo;
 import com.iala.cpd.entity.Localidade;
 import com.iala.cpd.entity.Usuario;
-import com.iala.cpd.repository.AnoLetivoRepository;
 import com.iala.cpd.repository.ConfigRepository;
 import com.iala.cpd.repository.GrupoRepository;
 import com.iala.cpd.repository.LocalidadeRepository;
@@ -31,8 +26,6 @@ import io.leangen.graphql.spqr.spring.annotations.GraphQLApi;
 @GraphQLApi
 public class Query {
 
-	@Autowired
-	private AnoLetivoRepository anoLetivoRepository;
 
 	@Autowired
 	private GrupoRepository grupoRepository;
@@ -91,18 +84,6 @@ public class Query {
 	public Iterable<MatriculaFuncional> obterPorClasse(String classe) {
 		return funcionarioRepository.findAllByClasse(classe);
 	}*/
-
-	// ANOS LETIVOS
-	@GraphQLQuery
-	public AnoLetivo obterAnoLetivo(int nome) {
-		return anoLetivoRepository.findByNome(nome);
-	}
-
-	@GraphQLQuery
-	public Iterable<AnoLetivo> obterAnosLetivos(int pag, int porpag, String sort) {
-		Pageable sortedByNome = PageRequest.of(pag, porpag, Sort.by(sort));
-		return anoLetivoRepository.findAll(sortedByNome);
-	}
 
 
 	// TIPOS

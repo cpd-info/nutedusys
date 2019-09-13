@@ -2,9 +2,7 @@ package com.iala.cpd.model;
 
 import java.time.LocalDate;
 import java.util.List;
-
-import com.iala.cpd.entity.Escola;
-
+import com.iala.cpd.entity.Setor;
 import lombok.Data;
 
 //POJO para escola.html
@@ -32,7 +30,7 @@ public class EscolaModel {
 		System.out.println("(EscolaModel) Passei " + LocalDate.now());
 	}
  
-	public EscolaModel(Escola esc) {
+	public EscolaModel(Setor esc) {
 		super();
 		this.id = esc.getId();
 		this.nome = esc.getNome();

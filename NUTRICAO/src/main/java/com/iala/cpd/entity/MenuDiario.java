@@ -15,6 +15,7 @@ import lombok.Data;
 public class MenuDiario {
 	@Id @GeneratedValue Long id;
 	private String nome;
+	private String nome_desfagia;
 	private String descricao;
 	private FaixaEtaria faixaEtaria;
 	
@@ -22,5 +23,5 @@ public class MenuDiario {
 	private List<AlimentoDiario> perCapta;
 	
 	@Relationship("MONTA")
-	private List<Composicao> cardapios;
+	private List<ComposicaoCardapio> cardapios;
 }
