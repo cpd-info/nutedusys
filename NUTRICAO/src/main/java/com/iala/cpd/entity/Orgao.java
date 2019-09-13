@@ -15,9 +15,6 @@ public class Orgao{
 	private String nome;
 	private List<String> telefones;
 	private String email;
-	
-	@Relationship("SUBORDINADO")
-	private Organizacao organizacao;
 
 	@Relationship(type="SERVE_AO", direction=Relationship.INCOMING)
 	private List<Cargo> cargo;

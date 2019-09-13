@@ -6,17 +6,20 @@ import org.neo4j.ogm.annotation.GeneratedValue;
 import org.neo4j.ogm.annotation.Id;
 import org.neo4j.ogm.annotation.NodeEntity;
 import org.neo4j.ogm.annotation.Relationship;
+import com.iala.cpd.type.FaixaEtaria;
 import lombok.Data;
 
+//Parte da(s) nutricionista(s)
 @NodeEntity
 @Data
 public class MenuDiario {
 	@Id @GeneratedValue Long id;
 	private String nome;
 	private String descricao;
+	private FaixaEtaria faixaEtaria;
 	
-	@Relationship(type="COMPOE", direction=Relationship.INCOMING)
-	private List<GeneroAlimento> generoAlimento;
+	@Relationship("COMPOSTO_POR")
+	private List<AlimentoDiario> perCapta;
 	
 	@Relationship("MONTA")
 	private List<Composicao> cardapios;
