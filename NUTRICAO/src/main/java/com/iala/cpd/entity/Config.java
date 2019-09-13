@@ -15,7 +15,7 @@ public class Config {
 	private Long escolaInep;
 	
 	@Relationship(type="ESTAMOS_EM")
-	private AnoLetivo anoLetivo;
+	private Integer anoLetivo;
 	
 	public void setConfig(Config conf) {
 		if (conf.firstRun != null) {
