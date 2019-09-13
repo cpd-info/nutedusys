@@ -1,21 +1,23 @@
 package com.iala.cpd.entity;
 
+import java.util.List;
 import org.neo4j.ogm.annotation.GeneratedValue;
 import org.neo4j.ogm.annotation.Id;
 import org.neo4j.ogm.annotation.NodeEntity;
 import org.neo4j.ogm.annotation.Relationship;
-import com.iala.cpd.type.UnidadePadrao;
+import com.iala.cpd.entityAbstract.Produto;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 @NodeEntity
 @Data
-public class GeneroAlimento {
+@EqualsAndHashCode(callSuper=false)
+public class GeneroAlimento extends Produto{
 	@Id @GeneratedValue Long id;
-	private String nome;
-	private String descricao;
-	private UnidadePadrao unidadePadrao;
 	
-	@Relationship("POSSUI_NUTRIENTES")
-	private ValorNutricional valorNutricional;
+	private Float densidade;
+	
+	@Relationship("VALOR_NUTRICIONAL")
+	private List<ValorNutricional> valorNutricional;
 	
 }
