@@ -15,5 +15,4 @@ public class Cnae {
         private Boolean fator;
         private Boolean atendido;
         private Float aliquota;
-        private 
 }
