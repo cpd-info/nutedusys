@@ -7,6 +7,6 @@ import lombok.Data;
 
 @NodeEntity
 @Data
-public class Fornecedor {
+public class Fornecedor extends PessoaJuridica{
 	@Id @GeneratedValue Long id;
 }
