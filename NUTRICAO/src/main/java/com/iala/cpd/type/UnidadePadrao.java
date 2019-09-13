@@ -1,5 +1,5 @@
 package com.iala.cpd.type;
 
 public enum UnidadePadrao {
-	Unidade, Kilogramas, Litros
+	Unidade, Kilogramas, Litros, Calorias
 }
