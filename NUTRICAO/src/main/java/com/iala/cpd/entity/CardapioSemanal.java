@@ -15,5 +15,5 @@ public class CardapioSemanal {
 	private String descricao;
 	
 	@Relationship(type="MONTA", direction=Relationship.INCOMING)
-	private List<Composicao> pratos;
+	private List<ComposicaoCardapio> pratos;
 }

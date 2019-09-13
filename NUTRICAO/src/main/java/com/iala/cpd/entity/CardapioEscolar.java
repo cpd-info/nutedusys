@@ -1,5 +1,6 @@
 package com.iala.cpd.entity;
 
+import java.util.Arrays;
 import java.util.List;
 
 import org.neo4j.ogm.annotation.GeneratedValue;
@@ -16,11 +17,17 @@ import lombok.Data;
 public class CardapioEscolar {
 	@Id @GeneratedValue Long id;
 	
+	@Relationship("REFERENTE_A")
+	private Integer anoLetivo;
+	
 	@Relationship("USA_NO_CARDAPIO1")
-	private List<CardapioSemanal> cardapio1;
+	private List<CardapioSemanal> cardapio1 = Arrays.asList(new CardapioSemanal[4]);
 	
 	@Relationship("USA_NO_CARDAPIO2")
-	private List<CardapioSemanal> cardapio2;
+	private List<CardapioSemanal> cardapio2 = Arrays.asList(new CardapioSemanal[4]);
+	
+	@Relationship(type="CARDAPIO_ELEITO", direction=Relationship.INCOMING)
+	private List<CardapioEleito> escolas;
 	
 	private FaixaEtaria faixaEtaria;
 	
