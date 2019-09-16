@@ -9,7 +9,7 @@ import lombok.Data;
 
 @NodeEntity
 @Data
-public class Departamento{
+public class ZDepartamento{
 	@Id @GeneratedValue Long id;
 
 	private String nome;
