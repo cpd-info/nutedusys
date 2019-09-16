@@ -1,7 +1,7 @@
 package com.iala.cpd.type;
 
 public enum UnidadePadrao {
-	U("Unidade"), KG("Kilograma"), L("Litro"), CAL("Caloria");
+	UN("Unidade"), KG("Kilograma"), L("Litro"), CAL("Caloria");
 	
 	private final String text;
 	
