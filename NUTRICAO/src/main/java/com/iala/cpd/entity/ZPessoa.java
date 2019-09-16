@@ -46,8 +46,4 @@ public class ZPessoa extends PessoaFisica {
 	
 	@Relationship("CIDADAO_DE")
 	private Pais nacionalidade;
-	
-	@Relationship("ESCOLARIDADE")
-	private Formacao formacao;
-
 }
