@@ -3,5 +3,5 @@ embeddedTypeScriptId=TypeScript (2.4.1)
 installedTypeScriptPath=C\:\\Users\\Leandro\\AppData\\Roaming\\npm\\node_modules\\typescript
 tsserverEmulatePlugins=false
 tsserverTraceOnConsole=false
-typeScriptBuildPath={"src/main/resources/tsconfig.json"\:{}}
+typeScriptBuildPath={}
 useEmbeddedTypeScript=false
