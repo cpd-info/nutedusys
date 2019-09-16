@@ -14,7 +14,6 @@ public class Config {
 	
 	private Long escolaInep;
 	
-	@Relationship(type="ESTAMOS_EM")
 	private Integer anoLetivo;
 	
 	public void setConfig(Config conf) {
