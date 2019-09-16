@@ -8,7 +8,7 @@ import lombok.*;
 
 @NodeEntity
 @Data
-public class Cargo {
+public class ZCargo {
 	@Id @GeneratedValue Long id;
 	
 	private String nome;
