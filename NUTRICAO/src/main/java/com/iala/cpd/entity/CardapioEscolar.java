@@ -14,7 +14,6 @@ import lombok.Data;
 public class CardapioEscolar {
 	@Id @GeneratedValue Long id;
 	
-	@Relationship("REFERENTE_A")
 	private Integer anoLetivo;
 	
         //Limitação de lista precisa de testes
