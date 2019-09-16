@@ -1,0 +1,42 @@
+\\192.168.10.57\git\repository\nutedusys\NUTRICAO\src\main\resources\static\img
+
+ÍCONES:
+Cardápios: <span class="iconify" data-icon="ic:sharp-restaurant-menu" data-inline="false"></span>
+Gêneros Alimentícios:<i class='fas fa-leaf' style='font-size:24px'></i>   &#xf06c;
+Cemaee:  <i class='fas fa-american-sign-language-interpreting' style='font-size:24px'>	&#xf2a3   OU  (<i class='fas fa-wheelchair' style='font-size:24px'></i>    &#xf193;)
+Creche: <i class='fas fa-shapes' style='font-size:24px'></i>	&#xf61f
+EJA:<i class='fas fa-award' style='font-size:24px'></i>	&#xf559;
+Fundamental:<i class='fas fa-book-reader' style='font-size:24px'></i>	  &#xf5da;
+Mais Educação:<i class='fas fa-chalkboard-teacher' style='font-size:24px'></i>          	&#xf51c;
+SMEC/Eventos:<i class='fas fa-theater-masks' style='font-size:24px'></i>    	&#xf630;
+=============
+Per Capitas: <i class="fa fa-line-chart" style="font-size:24px"></i>
+Aquisições: <i class='fas fa-gavel' style='font-size:24px'></i>   &#xf0e3;
+Amostragens:<i class='fas fa-balance-scale' style='font-size:24px'></i>  &#xf24e;
+                       LAmostras:<i class='fas fa-microscope' style='font-size:24px'></i> 	&#xf610;
+Saldo da Aquisição: 	<i class='fas fa-comment-dollar' style='font-size:24px'></i>   &#xf651;
+Empenhar | Ano: <i class='fas fa-sitemap' style='font-size:24px'></i>     &#xf0e8;
+                             LAgricultura Familiar: <i class='fas fa-pepper-hot' style='font-size:24px'></i>      	&#xf816
+                             LContratos:  <i class='far fa-file-alt' style='font-size:24px'></i>	&#xf15c;
+                             LDescartáveis: <i class='fas fa-recycle' style='font-size:24px'></i>   &#xf1b8   OU (<i class='fas fa-utensils' style='font-size:24px'></i> &#xf2e7;)
+                             LEquipamentos(Máquinas):  <i class="fa fa-lightbulb-o" style="font-size:24px"></i>  
+                             LGás:<i class='fas fa-spray-can' style='font-size:24px'></i>     &#xf5bd
+                             LGen. Alim. (Carnes):<i class='fas fa-drumstick-bite' style='font-size:24px'></i>     &#xf6d7;
+                             LMaterial Limpeza: <i class='far fa-trash-alt' style='font-size:24px'></i>   &#xf2ed;
+                             LVasilhame/ Agua:  <i class='fas fa-tint' style='font-size:24px'></i>    &#xf043;
+Empenhos:<i class='fas fa-layer-group' style='font-size:24px'></i   &#xf5fd;
+Pedidos Modelos: <i class='fas fa-shopping-cart' style='font-size:24px'></i>	&#xf07a;
+Ped. Fornecedor: : <i class='fas fa-shipping-fast' style='font-size:24px'></i>   &#xf48b;
+Contr. Estoque:  <i class='fas fa-dolly' style='font-size:24px'></i> 	&#xf472;
+                         LGêneros Alimentícios:<i class='fas fa-carrot' style='font-size:24px'></i>         &#xf787;
+NF Fornecedores: <span class="iconify" data-icon="uil:file-contract-dollar" data-inline="false"></span>
+Contr. Empenhos:<i class='fas fa-chart-pie' style='font-size:24px'></i>      &#xf200;
+==========================================
+Produtos: <i class='fas fa-thumbtack' style='font-size:24px'></i>    &#xf08d;
+Fornecedores:<i class='fas fa-industry' style='font-size:24px'></i>       &#xf275;
+Estoques:<i class='fas fa-tasks' style='font-size:24px'></i>      &#xf0ae;
+Cardápios: <span class="iconify" data-icon="ic:sharp-restaurant-menu" data-inline="false"></span>
+Mapa: <i class='fas fa-chart-line' style='font-size:24px'></i>  	&#xf201
+Pedido: <i class='fas fa-paste' style='font-size:24px'></i>     &#xf0ea;
+Gênero: <span class="iconify" data-icon="whh:foodtray" data-inline="false"></span>
+
