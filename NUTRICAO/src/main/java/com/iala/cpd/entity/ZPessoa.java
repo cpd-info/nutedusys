@@ -16,7 +16,7 @@ import lombok.*;
 @NodeEntity
 @Data
 @EqualsAndHashCode(callSuper=false)
-public class Pessoa extends PessoaFisica {
+public class ZPessoa extends PessoaFisica {
 	
 	@Id @GeneratedValue Long id;
 	
