@@ -11,4 +11,5 @@ public class GeneroNCM {
 	@Id @GeneratedValue Long id;
 	private Integer codigo;
 	private String descricao;
+	private String subGenero;
 }
