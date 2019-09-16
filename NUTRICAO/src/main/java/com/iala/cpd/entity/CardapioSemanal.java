@@ -13,6 +13,7 @@ public class CardapioSemanal {
 	@Id @GeneratedValue Long id;
 	private String nome;
 	private String descricao;
+	private String cardapio_disfagia;
 	
 	@Relationship(type="MONTA", direction=Relationship.INCOMING)
 	private List<ComposicaoCardapio> pratos;
