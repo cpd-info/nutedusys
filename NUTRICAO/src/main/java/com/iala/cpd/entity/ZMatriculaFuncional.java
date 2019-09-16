@@ -11,7 +11,7 @@ import lombok.*;
 
 @NodeEntity
 @Data
-public class MatriculaFuncional {
+public class ZMatriculaFuncional {
 	@Id @GeneratedValue Long id;
 	
 	private int matricula;
