@@ -9,7 +9,7 @@ import lombok.Data;
 
 @NodeEntity
 @Data
-public class Orgao{
+public class ZOrgao{
 	@Id @GeneratedValue Long id;
 
 	private String nome;
