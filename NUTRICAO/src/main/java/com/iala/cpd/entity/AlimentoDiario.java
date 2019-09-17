@@ -11,7 +11,8 @@ import lombok.Data;
 @Data
 public class AlimentoDiario {
 	@Id @GeneratedValue Long id;
-	private Long quantidade;
+	private Float quantidade;
+	private Float quantidade_disfagia;
 	
 	@StartNode
 	private GeneroAlimento generoAlimento;
