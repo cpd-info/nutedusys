@@ -20,6 +20,10 @@ public class Usuario {
 	@GraphQLIgnore
 	private String senha;
 	
+	private String nome;
+	
+	private Long matricula;
+	
 	private boolean ativo;
 	
 	@EqualsAndHashCode.Exclude
