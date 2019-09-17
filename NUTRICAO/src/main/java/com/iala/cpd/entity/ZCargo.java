@@ -8,7 +8,7 @@ import lombok.*;
 
 @NodeEntity
 @Data
-public class Cargo {
+public class ZCargo {
 	@Id @GeneratedValue Long id;
 	
 	private String nome;
@@ -17,6 +17,6 @@ public class Cargo {
 	
 	@EqualsAndHashCode.Exclude
 	@Relationship("SERVE_AO")
-	private Orgao orgao;
+	private ZOrgao orgao;
 
 }

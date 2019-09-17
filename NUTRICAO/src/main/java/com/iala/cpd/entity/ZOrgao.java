@@ -9,19 +9,15 @@ import lombok.Data;
 
 @NodeEntity
 @Data
-public class Departamento{
+public class ZOrgao{
 	@Id @GeneratedValue Long id;
 
 	private String nome;
-	private String sigla;
 	private List<String> telefones;
 	private String email;
-	
-	@Relationship("SUBORDINADO")
-	private Orgao orgao;
-	
+
 	@Relationship(type="SERVE_AO", direction=Relationship.INCOMING)
-	private List<Cargo> cargo;
+	private List<ZCargo> cargo;
 	
 	public void setTelefone1(String tel) {
 		this.telefones.set(0, tel);

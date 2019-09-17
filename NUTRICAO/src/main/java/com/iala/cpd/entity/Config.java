@@ -3,7 +3,6 @@ package com.iala.cpd.entity;
 import org.neo4j.ogm.annotation.GeneratedValue;
 import org.neo4j.ogm.annotation.Id;
 import org.neo4j.ogm.annotation.NodeEntity;
-import org.neo4j.ogm.annotation.Relationship;
 import lombok.Data;
 
 @NodeEntity
@@ -14,7 +13,6 @@ public class Config {
 	
 	private Long escolaInep;
 	
-	@Relationship(type="ESTAMOS_EM")
 	private Integer anoLetivo;
 	
 	public void setConfig(Config conf) {

@@ -18,7 +18,6 @@ import com.iala.cpd.entity.Permissao;
 import com.iala.cpd.entity.Usuario;
 import com.iala.cpd.model.UsuarioModel;
 import com.iala.cpd.model.UsuarioSecurityModel;
-import com.iala.cpd.repository.FuncionarioRepository;
 import com.iala.cpd.repository.GrupoRepository;
 import com.iala.cpd.repository.UsuarioRepository;
 
@@ -30,9 +29,6 @@ public class UsuarioService  implements UserDetailsService {
 	
 	@Autowired
 	private GrupoRepository grupoRepository; 
-	
-	@Autowired
-	private FuncionarioRepository funcionarioRepository;
 			
 	/***
 	 * CONSULTA UM USUÁRIO POR LOGIN
@@ -148,8 +144,8 @@ public class UsuarioService  implements UserDetailsService {
 			//Debug.Print(Usuario);
 			usuariosModel.add(
 					new UsuarioModel(Usuario.getId(),
-							Usuario.getMatricula().getId(), 
-							Usuario.getMatricula().getFuncionario().getNome(), 
+							Usuario.getMatricula(), 
+							Usuario.getNome(), 
 							Usuario.getLogin(),
 							null, 
 							Usuario.isAtivo(),
@@ -186,8 +182,8 @@ public class UsuarioService  implements UserDetailsService {
 		
 		return new UsuarioModel(
 				Usuario.getId(),
-				Usuario.getMatricula().getId(),
-				Usuario.getMatricula().getFuncionario().getNome(), 
+				Usuario.getMatricula(),
+				Usuario.getNome(), 
 				Usuario.getLogin(),
 				null,
 				Usuario.isAtivo(),
@@ -208,7 +204,7 @@ public class UsuarioService  implements UserDetailsService {
 		usuario.setLogin(usuarioModel.getLogin());
 		
 		/*NOME DO USUÁRIO A SER SALVO*/
-		usuario.setMatricula(funcionarioRepository.findById(usuarioModel.getFuncionarioId()).get());
+		usuario.setMatricula(usuarioModel.getFuncionarioId());
 		
 		/*CRIPTOGRAMA E INFORMA A SENHA*/
 		if(!StringUtils.isEmpty(usuarioModel.getSenha()))

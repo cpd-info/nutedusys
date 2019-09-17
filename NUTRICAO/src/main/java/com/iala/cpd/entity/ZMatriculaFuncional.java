@@ -11,7 +11,7 @@ import lombok.*;
 
 @NodeEntity
 @Data
-public class MatriculaFuncional {
+public class ZMatriculaFuncional {
 	@Id @GeneratedValue Long id;
 	
 	private int matricula;
@@ -26,11 +26,11 @@ public class MatriculaFuncional {
 	
 	@EqualsAndHashCode.Exclude
 	@Relationship(type="TRABALHA_COM", direction = Relationship.INCOMING)
-	private Pessoa funcionario;
+	private ZPessoa funcionario;
 	
 	@EqualsAndHashCode.Exclude
 	@Relationship("OCUPA")
-	private Cargo cargo;
+	private ZCargo cargo;
 	
 	/*@EqualsAndHashCode.Exclude
 	@Relationship("LOTADO_EM")
