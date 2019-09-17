@@ -26,8 +26,5 @@ public class Usuario {
 	@Relationship("PERTENCE_A")
 	private List<Grupo> grupo = new ArrayList<>();
 	
-	@EqualsAndHashCode.Exclude
-	@Relationship("ASSOCIADO_A")
-	private MatriculaFuncional matricula;
 
 }

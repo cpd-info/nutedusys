@@ -17,6 +17,6 @@ public class ZCargo {
 	
 	@EqualsAndHashCode.Exclude
 	@Relationship("SERVE_AO")
-	private Orgao orgao;
+	private ZOrgao orgao;
 
 }

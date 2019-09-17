@@ -18,10 +18,10 @@ public class ZDepartamento{
 	private String email;
 	
 	@Relationship("SUBORDINADO")
-	private Orgao orgao;
+	private ZOrgao orgao;
 	
 	@Relationship(type="SERVE_AO", direction=Relationship.INCOMING)
-	private List<Cargo> cargo;
+	private List<ZCargo> cargo;
 	
 	public void setTelefone1(String tel) {
 		this.telefones.set(0, tel);

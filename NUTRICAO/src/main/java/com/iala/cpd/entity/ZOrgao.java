@@ -17,7 +17,7 @@ public class ZOrgao{
 	private String email;
 
 	@Relationship(type="SERVE_AO", direction=Relationship.INCOMING)
-	private List<Cargo> cargo;
+	private List<ZCargo> cargo;
 	
 	public void setTelefone1(String tel) {
 		this.telefones.set(0, tel);
