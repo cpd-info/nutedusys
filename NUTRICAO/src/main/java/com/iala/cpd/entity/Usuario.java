@@ -20,14 +20,15 @@ public class Usuario {
 	@GraphQLIgnore
 	private String senha;
 	
+	private String nome;
+	
+	private Long matricula;
+	
 	private boolean ativo;
 	
 	@EqualsAndHashCode.Exclude
 	@Relationship("PERTENCE_A")
 	private List<Grupo> grupo = new ArrayList<>();
 	
-	@EqualsAndHashCode.Exclude
-	@Relationship("ASSOCIADO_A")
-	private MatriculaFuncional matricula;
 
 }

@@ -36,10 +36,10 @@ public class ZPessoa extends PessoaFisica {
 	private String cursos;
 	
 	@Relationship(type="PAI", direction = Relationship.INCOMING)
-	private Pessoa pai;
+	private ZPessoa pai;
 	
 	@Relationship(type="MAE", direction = Relationship.INCOMING)
-	private Pessoa mae;
+	private ZPessoa mae;
 	
 	@Relationship("NATIVO_EM")
 	private Localidade naturalidade;
