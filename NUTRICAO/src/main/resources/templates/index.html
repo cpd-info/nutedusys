@@ -1,5 +1,6 @@
 <!doctype html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" 
+				xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,7 +20,13 @@
             <input class="form-control form-control-dark w-100 text-light bg-light" type="text" placeholder="Pesquisar" aria-label="Search">
             <ul class="navbar-nav px-3">
                 <li class="nav-item text-nowrap">
-                    <a class="nav-link text-light" href="#">Sign out</a>
+                    
+                    <form th:action="@{/logout}" id="form_logou" th:method="post">
+						<input type="hidden" th:name="${_csrf.parameterName}"
+							th:value="${_csrf.token}" />
+					</form>
+					<a class="nav-link text-light" href="#" onclick="document.getElementById('form_logou').submit();">Sign out</a>
+                    
                 </li>
             </ul>
         </nav>
