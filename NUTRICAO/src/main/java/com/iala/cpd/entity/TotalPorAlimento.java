@@ -12,6 +12,7 @@ import lombok.Data;
 @Data
 public class TotalPorAlimento {
 	@Id @GeneratedValue Long id;
+	
 	private Map<String, Integer> qtdPorSegmento;
 	
 	@StartNode
