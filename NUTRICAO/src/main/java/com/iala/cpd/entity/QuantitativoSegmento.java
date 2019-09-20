@@ -7,7 +7,7 @@ import org.neo4j.ogm.annotation.RelationshipEntity;
 import org.neo4j.ogm.annotation.StartNode;
 import lombok.Data;
 
-@RelationshipEntity("COMPOSTO_POR")
+@RelationshipEntity("CONTEMPLA")
 @Data
 public class QuantitativoSegmento {
 	@Id @GeneratedValue Long id;
