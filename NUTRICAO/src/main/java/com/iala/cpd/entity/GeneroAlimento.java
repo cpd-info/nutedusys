@@ -16,6 +16,7 @@ public class GeneroAlimento extends Produto{
 	@Id @GeneratedValue Long id;
 	
 	private Float densidade;
+	private String validade;
 	
 	@Relationship("VALOR_NUTRICIONAL")
 	private List<ValorNutricional> valorNutricional;

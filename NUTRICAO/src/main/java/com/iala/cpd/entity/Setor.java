@@ -34,7 +34,7 @@ public class Setor extends PessoaJuridica {
 
 	private List<String> telefones;
 
-	public void setEscola(EscolaModel esc) {
+	public Setor(EscolaModel esc) {
 		this.setNumero(esc.getNumero());
 		this.setLogradouro(esc.getLogradouro());
 		this.setBairro(esc.getBairro());

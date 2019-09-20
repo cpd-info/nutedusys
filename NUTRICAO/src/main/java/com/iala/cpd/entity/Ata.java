@@ -9,16 +9,10 @@ import lombok.Data;
 
 @NodeEntity
 @Data
-public class Pregao {
+public class Ata {
 	@Id @GeneratedValue Long id;
-	
 	private Integer numero;
-	private Integer processo;
-	private Integer licitacao;
 	
-	@Relationship("ORIGINA")
-	public List<Ata> atas;
-	
-	@Relationship("PROCESSOU")
-	public DemonstrativoAquisicao aquisicao;
+	@Relationship("LICITADO_PARA")
+	public List<Fornecedor> fornecedores;
 }
