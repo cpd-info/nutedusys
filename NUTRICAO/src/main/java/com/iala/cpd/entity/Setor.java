@@ -25,14 +25,15 @@ public class Setor extends PessoaJuridica {
 	private String celular;
 	private Long inep;
 	private FaixaEtaria faixaEtaria;
-
-	@Relationship("CARDAPIO_ELEITO")
-	private CardapioEleito cardapio;
+	private Integer cardapio_num;
 
 	@Relationship("CONTEMPLA")
-	private List<QuantitativoSegmento> alunosPorSegmento;
+	private List<QuantitativoSegmento> alunosPorSegmento = new ArrayList<>();
+	
+	@Relationship("RECEBE_ITENS")
+	private List<DemonstrativoPorEscola> demonstrativosAnuais = new ArrayList<>();
 
-	private List<String> telefones;
+	private List<String> telefones = new ArrayList<>();
 
 	public Setor(EscolaModel esc) {
 		this.setNumero(esc.getNumero());
@@ -51,7 +52,7 @@ public class Setor extends PessoaJuridica {
 		return this.alunosPorSegmento.get(0).getSegmento().getFaixaEtaria();
 	}
 
-	public Long getQuantitativoPorSegmento(Segmento segmento) {
+	public Integer getQuantitativoPorSegmento(Segmento segmento) {
 		return this.alunosPorSegmento.stream().filter(qs -> (qs.getSegmento().getId()==segmento.getId())).findFirst().get().getQuantidade_alunos();
 	}
 	
