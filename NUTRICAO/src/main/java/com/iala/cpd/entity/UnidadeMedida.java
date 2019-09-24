@@ -16,8 +16,8 @@ public class UnidadeMedida {
 	private UnidadePadrao unidadePadrao;
 	private Long quantidade;
 	
-	public UnidadeMedida(GeneroAlimento genAlim) {
-		this.setUnidadePadrao(genAlim.getUnidadePadrao());
+	public UnidadeMedida(Produto prod) {
+		this.setUnidadePadrao(prod.getUnidadePadrao());
 	}
 	public String getFormato(){
 		return this.nome + "(" + this.quantidade + this.unidadePadrao.name() + ")";
