@@ -1,5 +1,6 @@
 package com.iala.cpd.entity;
 
+import java.util.ArrayList;
 import java.util.List;
 import org.neo4j.ogm.annotation.GeneratedValue;
 import org.neo4j.ogm.annotation.Id;
@@ -15,5 +16,5 @@ public class CardapioSemanal {
 	private String descricao;
 	
 	@Relationship(type="MONTA", direction=Relationship.INCOMING)
-	private List<ComposicaoCardapio> pratos;
+	private List<ComposicaoCardapio> pratos = new ArrayList<>();
 }

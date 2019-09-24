@@ -1,5 +1,6 @@
 package com.iala.cpd.entity;
 
+import java.util.ArrayList;
 import java.util.List;
 import org.neo4j.ogm.annotation.GeneratedValue;
 import org.neo4j.ogm.annotation.Id;
@@ -14,5 +15,5 @@ public class Ata {
 	private Integer numero;
 	
 	@Relationship("LICITADO_PARA")
-	public List<Fornecedor> fornecedores;
+	public List<Fornecedor> fornecedores = new ArrayList<>();
 }
