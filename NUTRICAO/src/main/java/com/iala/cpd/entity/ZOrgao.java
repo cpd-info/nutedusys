@@ -1,5 +1,6 @@
 package com.iala.cpd.entity;
 
+import java.util.ArrayList;
 import java.util.List;
 import org.neo4j.ogm.annotation.GeneratedValue;
 import org.neo4j.ogm.annotation.Id;
@@ -13,11 +14,11 @@ public class ZOrgao{
 	@Id @GeneratedValue Long id;
 
 	private String nome;
-	private List<String> telefones;
+	private List<String> telefones = new ArrayList<>();
 	private String email;
 
 	@Relationship(type="SERVE_AO", direction=Relationship.INCOMING)
-	private List<ZCargo> cargo;
+	private List<ZCargo> cargo = new ArrayList<>();
 	
 	public void setTelefone1(String tel) {
 		this.telefones.set(0, tel);

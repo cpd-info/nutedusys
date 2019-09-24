@@ -1,5 +1,6 @@
 package com.iala.cpd.entity;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.neo4j.ogm.annotation.GeneratedValue;
@@ -17,5 +18,5 @@ public class TabelaTaco {
 	private String alimento;
 	
 	@Relationship("VALOR_NUTRICIONAL_100g")
-	private List<Nutriente> valorNutricional100g;
+	private List<Nutriente> valorNutricional100g = new ArrayList<>();
 }

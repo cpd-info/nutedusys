@@ -1,5 +1,6 @@
 package com.iala.cpd.entity;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.neo4j.ogm.annotation.GeneratedValue;
@@ -20,8 +21,8 @@ public class MenuDiario {
 	private FaixaEtaria faixaEtaria;
 	
 	@Relationship("COMPOSTO_POR")
-	private List<AlimentoDiario> perCapta;
+	private List<AlimentoDiario> perCapta = new ArrayList<>();
 	
 	@Relationship("MONTA")
-	private List<ComposicaoCardapio> cardapios;
+	private List<ComposicaoCardapio> cardapios = new ArrayList<>();
 }

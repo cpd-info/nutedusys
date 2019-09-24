@@ -1,5 +1,6 @@
 package com.iala.cpd.entity;
 
+import java.util.ArrayList;
 import java.util.List;
 import org.neo4j.ogm.annotation.GeneratedValue;
 import org.neo4j.ogm.annotation.Id;
@@ -14,7 +15,7 @@ public class ZDepartamento{
 
 	private String nome;
 	private String sigla;
-	private List<String> telefones;
+	private List<String> telefones = new ArrayList<>();
 	private String email;
 	
 	@Relationship("SUBORDINADO")

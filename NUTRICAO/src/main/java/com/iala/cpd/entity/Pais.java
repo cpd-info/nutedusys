@@ -1,5 +1,6 @@
 package com.iala.cpd.entity;
 
+import java.util.ArrayList;
 import java.util.List;
 import org.neo4j.ogm.annotation.GeneratedValue;
 import org.neo4j.ogm.annotation.Id;
@@ -18,7 +19,7 @@ public class Pais {
 	private String sigla;
 	
 	@Relationship(type="PERTENCE_A", direction=Relationship.INCOMING)
-	private List<Estado> estados;
+	private List<Estado> estados = new ArrayList<>();
 	
 	@Relationship(type="CAPITAL", direction=Relationship.INCOMING)
 	private Localidade capital;

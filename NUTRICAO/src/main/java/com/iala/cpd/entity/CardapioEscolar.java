@@ -1,5 +1,6 @@
 package com.iala.cpd.entity;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import org.neo4j.ogm.annotation.GeneratedValue;
@@ -25,7 +26,7 @@ public class CardapioEscolar {
 	private List<CardapioSemanal> cardapio2 = Arrays.asList(new CardapioSemanal[4]);
 	
 	@Relationship(type="CARDAPIO_ELEITO", direction=Relationship.INCOMING)
-	private List<CardapioEleito> escolas;
+	private List<CardapioEleito> escolas= new ArrayList<>();
 	
 	private FaixaEtaria faixaEtaria;
 	

@@ -1,5 +1,6 @@
 package com.iala.cpd.entity;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.neo4j.ogm.annotation.GeneratedValue;
@@ -29,6 +30,6 @@ public class Estado {
 	
 	@EqualsAndHashCode.Exclude
 	@Relationship(type="PERTENCE_A", direction=Relationship.INCOMING)
-	private List<Localidade> municipios;
+	private List<Localidade> municipios = new ArrayList<>();
 	
 }
