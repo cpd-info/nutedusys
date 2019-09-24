@@ -1,5 +1,6 @@
 package com.iala.cpd.entity;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.neo4j.ogm.annotation.GeneratedValue;
@@ -18,6 +19,6 @@ public class Segmento {
 	private String nivel;
 	private FaixaEtaria faixaEtaria;
 	
-	@Relationship("CONTEMPLA")
-	private List<QuantitativoSegmento> escolasPorSegmento;
+	@Relationship(type="CONTEMPLA", direction=Relationship.INCOMING)
+	private List<QuantitativoSegmento> escolasPorSegmento = new ArrayList<>();
 }
