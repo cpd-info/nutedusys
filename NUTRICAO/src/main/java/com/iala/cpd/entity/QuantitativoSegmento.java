@@ -11,7 +11,7 @@ import lombok.Data;
 @Data
 public class QuantitativoSegmento {
 	@Id @GeneratedValue Long id;
-	private Long quantidade_alunos;
+	private Integer quantidade_alunos;
 	
 	@StartNode
 	private Setor setor;
