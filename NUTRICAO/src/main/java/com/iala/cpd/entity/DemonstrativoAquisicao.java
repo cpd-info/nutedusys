@@ -1,5 +1,6 @@
 package com.iala.cpd.entity;
 
+import java.util.ArrayList;
 import java.util.List;
 import org.neo4j.ogm.annotation.GeneratedValue;
 import org.neo4j.ogm.annotation.Id;
@@ -11,8 +12,9 @@ import lombok.Data;
 @Data
 public class DemonstrativoAquisicao {
 	@Id @GeneratedValue Long id;
+	
 	private Integer anoLetivo;
 	
-	@Relationship("COM_ITENS")
-	public List<TotalPorAlimento> alimentos;
+	@Relationship("SOMA_DEMONSTRATIVO")
+	public List<DemonstrativoPorEscola> demonstrativos = new ArrayList<>();
 }
