@@ -1,21 +1,29 @@
 package com.iala.cpd.api;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
+import java.util.stream.IntStream;
+import org.neo4j.driver.v1.Record;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.neo4j.repository.Neo4jRepository;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 import com.iala.cpd.entity.Config;
 import com.iala.cpd.entity.Estado;
+import com.iala.cpd.entity.GeneroNCM;
 import com.iala.cpd.entity.Grupo;
 import com.iala.cpd.entity.Localidade;
+import com.iala.cpd.entity.MenuDiario;
 import com.iala.cpd.entity.Usuario;
 import com.iala.cpd.repository.ConfigRepository;
 import com.iala.cpd.repository.GrupoRepository;
 import com.iala.cpd.repository.LocalidadeRepository;
 import com.iala.cpd.repository.EstadoRepository;
 import com.iala.cpd.repository.UsuarioRepository;
+import com.iala.cpd.service.CurrentDB;
 import com.iala.cpd.type.DiaSemana;
 import com.iala.cpd.type.Etnia;
 import com.iala.cpd.type.Turno;
@@ -26,7 +34,9 @@ import io.leangen.graphql.spqr.spring.annotations.GraphQLApi;
 @GraphQLApi
 public class Query {
 
-
+	@Autowired
+	private CurrentDB cypherRepository;
+	
 	@Autowired
 	private GrupoRepository grupoRepository;
 
@@ -41,7 +51,32 @@ public class Query {
 
 	@Autowired
 	private EstadoRepository estadoRepository;
+	
+	
+	@Autowired
+	private Neo4jRepository<GeneroNCM, Long> ncmRepositorya;
+	
+	@Autowired
+	private Neo4jRepository<MenuDiario, Long> menuDiarioRepository;
+	
+	@GraphQLQuery
+	public List<Map<String, Object>> cypher(String query, String returns){
+		List<Record> registros = cypherRepository.OpenResult(query, returns);
+        List<Map<String, Object>> queryMap = new ArrayList<Map<String, Object>>();
+        IntStream.range(0, registros.size()).forEach(i -> queryMap.add(registros.get(i).get(returns).asMap()));
+        return queryMap;
+	}
 
+	@GraphQLQuery
+	public Iterable<GeneroNCM> todosNCMS() {
+		return ncmRepositorya.findAll();
+	}
+	
+	@GraphQLQuery
+	public Iterable<MenuDiario> obterMenus() {
+		return menuDiarioRepository.findAll();
+	}
+	
 	// LOCALIDADE
 	@GraphQLQuery
 	public List<Localidade> filtrarMunicipioByUfSigla(String uf) {
@@ -62,29 +97,6 @@ public class Query {
 	public Iterable<Estado> obterListaUFBR() {
 		return estadoRepository.findAllByPais("Brasil");
 	}
-
-
-	/*// FUNCIONARIOS
-	@GraphQLQuery
-	public MatriculaFuncional obterFuncionario(String nome) {
-		return funcionarioRepository.findFuncionarioByNome(nome);
-	}
-
-	@GraphQLQuery
-	public Iterable<MatriculaFuncional> obterFuncionarios() {
-		return funcionarioRepository.findAll(2);
-	}
-
-	@GraphQLQuery
-	public Iterable<MatriculaFuncional> obterFuncionarios(String nomeSecretaria) {
-		return funcionarioRepository.findAllFuncionariosBySecretaria(nomeSecretaria);
-	}
-	
-	@GraphQLQuery
-	public Iterable<MatriculaFuncional> obterPorClasse(String classe) {
-		return funcionarioRepository.findAllByClasse(classe);
-	}*/
-
 
 	// TIPOS
 
