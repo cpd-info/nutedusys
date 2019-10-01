@@ -11,15 +11,18 @@ import lombok.EqualsAndHashCode;
 @NodeEntity
 @Data
 @EqualsAndHashCode(callSuper=false)
-public class Pregao extends BaseEntity {
-	private Integer numero;
-	private Integer processo;
-	private Integer licitacao;
+public class TotalPorProduto extends BaseEntity {
+	
+	private Double qtd;
+	
+	@Relationship(type="CONSTANDO", direction=Relationship.INCOMING)
+	private DemonstrativoPorEscola demonstrativo;
 	
 	@EqualsAndHashCode.Exclude
-	@Relationship("ORIGINA")
-	public List<Ata> atas = new ArrayList<Ata>();
+	@Relationship("POR_SEGMENTO")
+	private List<PorSegmento> porSegmento = new ArrayList<PorSegmento>();
 	
-	@Relationship("PROCESSOU")
-	public DemonstrativoAquisicao aquisicao;
+	@Relationship("RECEBE_ITENS")
+	private Produto produto;
+	
 }

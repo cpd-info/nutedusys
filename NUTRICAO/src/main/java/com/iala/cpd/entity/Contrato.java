@@ -1,16 +1,16 @@
 package com.iala.cpd.entity;
 
 import java.util.Date;
-import org.neo4j.ogm.annotation.GeneratedValue;
-import org.neo4j.ogm.annotation.Id;
 import org.neo4j.ogm.annotation.NodeEntity;
 import org.neo4j.ogm.annotation.typeconversion.DateString;
+import com.iala.cpd.entityAbstract.BaseEntity;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 @NodeEntity
 @Data
-public class Contrato {
-	@Id @GeneratedValue Long id;
+@EqualsAndHashCode(callSuper=false)
+public class Contrato extends BaseEntity {
 	private Integer numero;
 	private Float total;
 	

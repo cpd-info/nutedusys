@@ -1,12 +1,12 @@
 package com.iala.cpd.entity;
 
-import org.neo4j.ogm.annotation.GeneratedValue;
-import org.neo4j.ogm.annotation.Id;
 import org.neo4j.ogm.annotation.NodeEntity;
+import com.iala.cpd.entityAbstract.BaseEntity;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 @NodeEntity
 @Data
-public class Empenho {
-	@Id @GeneratedValue Long id;
+@EqualsAndHashCode(callSuper=false)
+public class Empenho extends BaseEntity {
 }

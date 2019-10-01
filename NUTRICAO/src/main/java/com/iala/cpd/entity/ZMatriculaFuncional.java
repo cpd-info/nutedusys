@@ -1,18 +1,17 @@
 package com.iala.cpd.entity;
 
 import java.util.Date;
-import org.neo4j.ogm.annotation.GeneratedValue;
-import org.neo4j.ogm.annotation.Id;
 import org.neo4j.ogm.annotation.NodeEntity;
 import org.neo4j.ogm.annotation.Relationship;
 import org.neo4j.ogm.annotation.typeconversion.DateString;
+import com.iala.cpd.entityAbstract.BaseEntity;
 import com.iala.cpd.type.Vinculo;
 import lombok.*;
 
 @NodeEntity
 @Data
-public class ZMatriculaFuncional {
-	@Id @GeneratedValue Long id;
+@EqualsAndHashCode(callSuper=false)
+public class ZMatriculaFuncional extends BaseEntity {
 	
 	private int matricula;
 	

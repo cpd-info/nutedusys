@@ -2,12 +2,9 @@ package com.iala.cpd.entity;
 
 import java.util.Date;
 import java.util.List;
-import org.neo4j.ogm.annotation.GeneratedValue;
-import org.neo4j.ogm.annotation.Id;
 import org.neo4j.ogm.annotation.NodeEntity;
 import org.neo4j.ogm.annotation.Relationship;
 import org.neo4j.ogm.annotation.typeconversion.DateString;
-
 import com.iala.cpd.entityAbstract.PessoaFisica;
 import com.iala.cpd.type.Etnia;
 import com.iala.cpd.type.Sexo;
@@ -17,10 +14,6 @@ import lombok.*;
 @Data
 @EqualsAndHashCode(callSuper=false)
 public class ZPessoa extends PessoaFisica {
-	
-	@Id @GeneratedValue Long id;
-	
-	private String nome;
 	
 	@DateString("dd/MM/YYYY")
 	private Date nascimento;
