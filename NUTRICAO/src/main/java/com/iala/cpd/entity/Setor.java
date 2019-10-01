@@ -27,11 +27,13 @@ public class Setor extends PessoaJuridica {
 	private FaixaEtaria faixaEtaria;
 	private Integer cardapio_num;
 
+	@EqualsAndHashCode.Exclude
 	@Relationship("CONTEMPLA")
-	private List<QuantitativoSegmento> alunosPorSegmento = new ArrayList<>();
+	private List<QuantitativoSegmento> alunosPorSegmento = new ArrayList<QuantitativoSegmento>();
 	
+	@EqualsAndHashCode.Exclude
 	@Relationship("RECEBE_ITENS")
-	private List<DemonstrativoPorEscola> demonstrativosAnuais = new ArrayList<>();
+	private List<DemonstrativoPorEscola> demonstrativosAnuais = new ArrayList<DemonstrativoPorEscola>();
 
 	private List<String> telefones = new ArrayList<>();
 

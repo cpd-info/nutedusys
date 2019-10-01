@@ -5,7 +5,8 @@ import com.iala.cpd.entity.Localidade;
 import lombok.*;
 
 @Data
-public abstract class Endereco {
+@EqualsAndHashCode(callSuper=false)
+public abstract class Endereco extends BaseEntity {
 	
 	private String logradouro;
 	private String numero;

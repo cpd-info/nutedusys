@@ -2,21 +2,16 @@ package com.iala.cpd.entity;
 
 import java.util.ArrayList;
 import java.util.List;
-import org.neo4j.ogm.annotation.GeneratedValue;
-import org.neo4j.ogm.annotation.Id;
 import org.neo4j.ogm.annotation.NodeEntity;
 import org.neo4j.ogm.annotation.Relationship;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.iala.cpd.entityAbstract.BaseEntity;
 import lombok.*;
 
 @NodeEntity
 @Data
-public class Grupo {
-	@Id @GeneratedValue Long id;
-	
-	private String nome;
-	
-	private String descricao;
+@EqualsAndHashCode(callSuper=false)
+public class Grupo extends BaseEntity {
 	
 	@EqualsAndHashCode.Exclude
 	@JsonIgnore
@@ -25,7 +20,6 @@ public class Grupo {
 	
 	@EqualsAndHashCode.Exclude
 	@Relationship("CONCEDE_ACESSO")
-	private List<Permissao> permissao = new ArrayList<>();
-
+	private List<Permissao> permissao = new ArrayList<Permissao>();
 
 }

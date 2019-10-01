@@ -1,15 +1,14 @@
 package com.iala.cpd.entity;
 
-import org.neo4j.ogm.annotation.GeneratedValue;
-import org.neo4j.ogm.annotation.Id;
 import org.neo4j.ogm.annotation.NodeEntity;
+import com.iala.cpd.entityAbstract.BaseEntity;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 @NodeEntity
 @Data
-public class GeneroNCM {
-	@Id @GeneratedValue Long id;
+@EqualsAndHashCode(callSuper=false)
+public class GeneroNCM extends BaseEntity {
 	private Integer codigo;
-	private String descricao;
 	private String subGenero;
 }

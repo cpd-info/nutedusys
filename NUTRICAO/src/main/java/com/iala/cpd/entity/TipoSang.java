@@ -1,6 +1,5 @@
 package com.iala.cpd.entity;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import org.neo4j.ogm.annotation.GeneratedValue;
@@ -19,9 +18,9 @@ public class TipoSang {
 	private RhTs rh;
 	
 	@Relationship(type="PODE_DOAR", direction = Relationship.INCOMING)
-	private List<TipoSang> doadores = new ArrayList<>();
+	private List<TipoSang> doadores;
 	
 	@Relationship(type="PODE_DOAR", direction = Relationship.OUTGOING)
-	private List<TipoSang> receptores = new ArrayList<>();
+	private List<TipoSang> receptores;
 	
 }

@@ -1,25 +1,23 @@
 package com.iala.cpd.entity;
 
-import org.neo4j.ogm.annotation.GeneratedValue;
-import org.neo4j.ogm.annotation.Id;
 import org.neo4j.ogm.annotation.NodeEntity;
-
+import com.iala.cpd.entityAbstract.BaseEntity;
 import com.iala.cpd.type.UnidadePadrao;
-
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 @NodeEntity
 @Data
-public class UnidadeMedida {
-	@Id @GeneratedValue Long id;
-	private String nome;
+@EqualsAndHashCode(callSuper=false)
+public class UnidadeMedida extends BaseEntity {
+	private String nomeAbreviado;
 	private UnidadePadrao unidadePadrao;
-	private Long quantidade;
+	private Double quantidade;
 	
 	public UnidadeMedida(Produto prod) {
 		this.setUnidadePadrao(prod.getUnidadePadrao());
 	}
 	public String getFormato(){
-		return this.nome + "(" + this.quantidade + this.unidadePadrao.name() + ")";
+		return this.getNome() + "(" + this.quantidade + this.unidadePadrao.name() + ")";
 	}
 }

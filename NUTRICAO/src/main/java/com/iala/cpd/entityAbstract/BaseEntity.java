@@ -7,6 +7,7 @@ import lombok.*;
 @Data
 public abstract class BaseEntity {
 	@Id @GeneratedValue Long id;
-	private Boolean ativo;
+	//private Boolean ativo;
 	private String nome;
+	private String descricao;
 }

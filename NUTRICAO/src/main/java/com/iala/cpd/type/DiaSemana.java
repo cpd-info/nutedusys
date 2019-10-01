@@ -29,8 +29,7 @@ public enum DiaSemana {
 		return (text_full == "") ? this.toString() : text_full;
     }
 	
-	@Override
-	public String toString() {
-		return TextUtils.firstLetterUp( this.toString());
+	public String FormatoAbreviado() {
+		return TextUtils.firstLetterUp(this.toString());
 	}
 }
